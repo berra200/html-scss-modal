@@ -1,6 +1,7 @@
 $main-bg-color: #e9ebef;
 $puff-bg-color: white;
 $primary-color: hsl(180, 24%, 81%);
+$section-heading-color: hsla(180, 69%, 25%, 1);
 
 
 
@@ -13,11 +14,24 @@ body {
 }
 
 main {
-    padding: 48px 24px;
+    padding: 96px 0;
     width: 100%;
     max-width: 1140px;
     min-height: 100vh;
     background-color: $main-bg-color;
+}
+
+section {
+    background-color: hsla(0, 0%, 96%, 1);
+    padding: 80px 64px;
+}
+
+h1 {
+    margin: 0 auto 64px ;
+
+    color: $section-heading-color;
+    text-align: center;
+    font-size: 48px;
 }
 
 .puff-wrapper {
@@ -36,12 +50,12 @@ main {
     display: flex;
     flex-direction: column;
 
-    border-radius: 24px;
+    border-radius:  0 24px;
     border-bottom: 4px solid $primary-color;
 
     img {
         margin: -32px -24px 32px -24px;
-        border-radius: 24px 24px 0 0;
+        border-radius: 0px 24px 0 0;
     }
 
     h2 {
