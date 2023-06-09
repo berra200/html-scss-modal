@@ -7,16 +7,22 @@ body {
 }
 
 main {
+  padding: 48px 24px;
   width: 100%;
   max-width: 1140px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #e9ebef;
 }
 
+.puff-wrapper {
+  margin: 0;
+  display: flex;
+  gap: 48px;
+}
+
 .puff {
-  width: 326px;
-  max-width: 33%;
-  margin: 100px auto;
+  min-width: 200px;
+  margin: 0;
   padding: 32px 24px;
   background-color: white;
   box-sizing: border-box;
@@ -56,4 +62,10 @@ main {
 }
 .puff .button:active {
   box-shadow: inset 0 0 5px rgb(79, 79, 79);
+}
+
+@media (max-width: 768px) {
+  .puff-wrapper {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
