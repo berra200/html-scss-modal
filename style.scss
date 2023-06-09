@@ -1,0 +1,67 @@
+$main-bg-color: hsl(230, 20%, 94%);
+$puff-bg-color: white;
+$primary-color: hsl(180, 24%, 81%);
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    max-width: 1140px;
+    height: 100vh;
+    background-color: $main-bg-color;
+}
+
+.puff {
+    width: 326px;
+    max-width: 33%;
+    margin: 100px auto;
+    padding: 32px 24px;
+    background-color: $puff-bg-color;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 24px;
+    border-bottom: 4px solid $primary-color;
+
+    h1 {
+        margin: 0;
+        margin-bottom: 8px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    .button {
+        margin-top: 24px;
+        padding: 12px;
+        background-color: $primary-color;
+
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+
+        border: none;
+        border-radius: 8px;
+        user-select: none;
+
+        &:active {
+            box-shadow: inset 0 0 5px rgb(79, 79, 79);
+        }
+    }
+}
